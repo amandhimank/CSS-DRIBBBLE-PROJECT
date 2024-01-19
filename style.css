@@ -1,0 +1,401 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(./Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Source Serif 4";
+    src: url(./vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+#page1{
+    height: 150%;
+    width: 100%;
+    background-color: #F8F7F4;
+}
+
+#nav{
+    height: 6.5vw;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5vw;
+}
+
+#nav-part1{
+    width: 29%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1 h4{
+    font-size: 1vw;
+    font-weight: 560;
+}
+
+#nav img{
+    height: 27.5%;
+    width: 10%;
+}
+
+#nav-part2{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#nav-part2 button{
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1vw;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin: 0 0.3vw;
+    cursor: pointer;
+}
+
+#nav-part2 button:nth-child(2){
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+#nav-part2 input{
+    border: none;
+    border-radius: 50px;
+    padding: 10px 1vw;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 12.5vw);
+    /* background-color: crimson; */
+    padding: 5.3vw 0;
+}
+
+#content h3{
+    background-color: #F3B0EA;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    font-weight: 600;
+    position: relative;
+    /* CETNER PE LAANE KE LIYE */
+    /* transform: translateX(-50%);: Yeh property element ko horizontal direction mein move karne ke liye use hoti hai. Yahan -50% ka matlab hai ki element apne width ka 50% left ki or translate ho jaaye. Isse element ko sahi tarah se horizontally center kiya ja sakta hai. */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Source Serif 4";
+}
+
+#content h1{
+    text-align: center;
+    font-size: 4.7vw;
+    line-height: 4.8vw;
+    margin-top: 2.5vw;
+    font-weight: 500;
+    font-family: "Source Serif 4";
+}
+
+#content h4{
+    text-align: center;
+    font-size: 1.25vw;
+    font-weight: 560;
+    margin-top: 2vw;
+
+}
+
+#content button{
+    padding: 20px 25px;
+    border-radius: 50px;
+    font-size: 1vw;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin: 2.5vw 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom{
+    width: 100%;
+    height: 25vw;
+    /* background-color: blue; */
+    padding: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 1vw;
+    /* METHOD-2 parent property */
+    /* white-space: nowrap; */
+    gap: 2.5vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+
+
+.elem{
+    /* METHOD 2 => child property */
+    /* display: inline-block; */
+    flex-shrink: 0;
+    height: 100%;
+    width: 20%;   
+    /* border: 2px solid black; */
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem .text-bottom{
+    height: 25%;
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding-left: 1.5vw;
+}
+
+.elem .text-bottom h5{
+    margin: 2px 0;
+}
+
+.elem .text-bottom h6{
+    display: inline-block;
+    margin-right: 1vw;
+    margin-top: 1.5vh;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 0.7vw;
+}
+
+
+#page2{
+    /* background-color: red; */
+    width: 100%;
+    height: 170%;
+    padding: 3vw 4vw;
+    position: relative;
+   
+}
+
+#page2 h1{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+
+.box{
+    width: 20vw;
+    height: 15vw;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+}
+
+#page2 .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.box-bottom{
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.733));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5vw;
+}
+
+.box-bottom h3{
+    color: white;
+    font-weight: 600;
+    font-size: 1.15vw;
+}
+
+.box-bottom i{
+    margin: 0 0.3vw;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.box:hover .box-bottom{
+    bottom: 0;
+}
+
+.box:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.385);
+}
+
+#page2 button{
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    padding: 1.3vw 2vw; 
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    font-size: 1vw;
+    font-weight: 560;
+    cursor: pointer;
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    background-color: #FFDA79;
+    padding: 7vw;
+}
+
+#page3 h1{
+    font-size: 4vw;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    text-align: center;
+    line-height: 4.5vw;
+}
+
+#page3 h4{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin: 2vw 0;
+    line-height: 2.4vw;
+}
+
+#page3 button{
+    padding: 20px 25px;
+    border-radius: 50px;
+    font-size: 1vw;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin: 2.5vw 0;
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-right: 1.5vw;
+}
+
+#page3 button:nth-child(4){
+    background-color: white;
+    color: black;
+}
+
+#page3 h4 a{
+    color: black;
+}
+
+#footer{
+    height: 40%;
+    width: 100%;
+    padding: 5vw 7vw;
+}
+
+#footer-top{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-top img{
+    height: 8vw;
+    width: 7vw;
+}
+
+#footer-part1{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-part1 h4{
+    font-weight: 560;
+}
+
+#footer-part2 i{
+    font-size: 1.5vw;
+    margin-right: 0.5vw;
+}
+
+#footer-bottom{
+    margin-top: 6vw;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-bottom-part1{
+    display: flex;
+    gap: 1vw;
+}
+
+#footer-bottom-part2{
+    display: flex;
+    gap: 1vw;
+}
+
+#footer-bottom h4{
+    font-weight: 400;
+}
