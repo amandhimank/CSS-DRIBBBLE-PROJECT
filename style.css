@@ -155,7 +155,7 @@ body{
     /* METHOD-2 parent property */
     /* white-space: nowrap; */
     gap: 1vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
